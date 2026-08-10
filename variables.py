@@ -15,7 +15,7 @@ quotex_password = "4n1m4Tr0n"
 # direccion_excel = "operaciones_10_5_10.xlsx"
 # direccion_excel = "operaciones_10_10_10.xlsx"
 # direccion_excel = "operaciones_6_7_7.xlsx"
-direccion_excel = "operaciones_5_5_5.xlsx"
+direccion_excel = "excel/operaciones_5_5_5.xlsx"
 
 error_time_margin_seconds = 15
 refreshing_time_minutes = 4

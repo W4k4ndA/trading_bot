@@ -37,7 +37,7 @@ init_balance = None
 final_balance = None
 
 # Configurar el nivel de logging, el nombre del archivo y el formato de los mensajes
-logging.basicConfig(level=logging.DEBUG, filename='registro.log',
+logging.basicConfig(level=logging.DEBUG, filename='logs/registro.log',
                     format='%(asctime)s - %(levelname)s\n%(message)s\n\n')
 
 # Crear un logger
@@ -705,7 +705,7 @@ async def launch_telegram(api_id, api_hash, chat_id):
         chat_id (_type_): _description_
     """
     global telegram_client
-    telegram_client = TelegramClient('session_name', api_id, api_hash)
+     telegram_client = TelegramClient('data/session_name', api_id, api_hash)
     await telegram_client.start()
 
     # @telegram_client.on(events.NewMessage(chats=[chat_id,"me"], pattern=r'(?i).*Zona horaria: UTC')) #descomentar esta linea y comentar la siguiente para filtrar tambien los mensajes por chats
