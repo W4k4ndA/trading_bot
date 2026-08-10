@@ -1,0 +1,467 @@
+[
+    {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "locale",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "locale",
+        "description": "locale",
+        "detail": "locale",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "init",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
+        "label": "Fore",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
+        "label": "Style",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
+        "label": "Back",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
+        "label": "TelegramClient",
+        "importPath": "telethon",
+        "description": "telethon",
+        "isExtraImport": true,
+        "detail": "telethon",
+        "documentation": {}
+    },
+    {
+        "label": "events",
+        "importPath": "telethon",
+        "description": "telethon",
+        "isExtraImport": true,
+        "detail": "telethon",
+        "documentation": {}
+    },
+    {
+        "label": "async_playwright",
+        "importPath": "playwright.async_api",
+        "description": "playwright.async_api",
+        "isExtraImport": true,
+        "detail": "playwright.async_api",
+        "documentation": {}
+    },
+    {
+        "label": "async_api",
+        "importPath": "playwright",
+        "description": "playwright",
+        "isExtraImport": true,
+        "detail": "playwright",
+        "documentation": {}
+    },
+    {
+        "label": "load_workbook",
+        "importPath": "openpyxl",
+        "description": "openpyxl",
+        "isExtraImport": true,
+        "detail": "openpyxl",
+        "documentation": {}
+    },
+    {
+        "label": "Workbook",
+        "importPath": "openpyxl",
+        "description": "openpyxl",
+        "isExtraImport": true,
+        "detail": "openpyxl",
+        "documentation": {}
+    },
+    {
+        "label": "variables",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "variables",
+        "description": "variables",
+        "detail": "variables",
+        "documentation": {}
+    },
+    {
+        "label": "printMessage",
+        "kind": 2,
+        "importPath": "respaldo_main",
+        "description": "respaldo_main",
+        "peekOfCode": "def printMessage(message):\n    print(f\"{message}\" + Fore.WHITE + Back.BLACK + Style.NORMAL)\n# Funcion para guardar los resultados de la operacion en un excel\ndef agregar_a_excel(fecha_operacion, fecha_fin, tipo, par_moneda, direccion, balance_inicial, balance_final, nombre_archivo=var.direccion_excel):\n    # Comprobar si el archivo ya existe\n    if os.path.exists(nombre_archivo):\n        # Cargar el archivo existente\n        wb = load_workbook(nombre_archivo)\n        # Seleccionar la hoja de Excel\n        ws = wb.active",
+        "detail": "respaldo_main",
+        "documentation": {}
+    },
+    {
+        "label": "agregar_a_excel",
+        "kind": 2,
+        "importPath": "respaldo_main",
+        "description": "respaldo_main",
+        "peekOfCode": "def agregar_a_excel(fecha_operacion, fecha_fin, tipo, par_moneda, direccion, balance_inicial, balance_final, nombre_archivo=var.direccion_excel):\n    # Comprobar si el archivo ya existe\n    if os.path.exists(nombre_archivo):\n        # Cargar el archivo existente\n        wb = load_workbook(nombre_archivo)\n        # Seleccionar la hoja de Excel\n        ws = wb.active\n        # Encontrar la primera fila vacía\n        fila_vacia = ws.max_row + 1\n    else:",
+        "detail": "respaldo_main",
+        "documentation": {}
+    },
+    {
+        "label": "operation_running",
+        "kind": 5,
+        "importPath": "respaldo_main",
+        "description": "respaldo_main",
+        "peekOfCode": "operation_running = False\nbrowser_page = None\ntelegram_client = None\nbroker_signal_message = \"\"\nduracion = None\npar = None\nfechaHora_iniOperacion = \"\"\nfechaHora_finOperacion = \"\"\noperacion = \"\"\ninit_balance = None",
+        "detail": "respaldo_main",
+        "documentation": {}
+    },
+    {
+        "label": "browser_page",
+        "kind": 5,
+        "importPath": "respaldo_main",
+        "description": "respaldo_main",
+        "peekOfCode": "browser_page = None\ntelegram_client = None\nbroker_signal_message = \"\"\nduracion = None\npar = None\nfechaHora_iniOperacion = \"\"\nfechaHora_finOperacion = \"\"\noperacion = \"\"\ninit_balance = None\nfinal_balance = None",
+        "detail": "respaldo_main",
+        "documentation": {}
+    },
+    {
+        "label": "telegram_client",
+        "kind": 5,
+        "importPath": "respaldo_main",
+        "description": "respaldo_main",
+        "peekOfCode": "telegram_client = None\nbroker_signal_message = \"\"\nduracion = None\npar = None\nfechaHora_iniOperacion = \"\"\nfechaHora_finOperacion = \"\"\noperacion = \"\"\ninit_balance = None\nfinal_balance = None\n# Configurar el nivel de logging, el nombre del archivo y el formato de los mensajes",
+        "detail": "respaldo_main",
+        "documentation": {}
+    },
+    {
+        "label": "broker_signal_message",
+        "kind": 5,
+        "importPath": "respaldo_main",
+        "description": "respaldo_main",
+        "peekOfCode": "broker_signal_message = \"\"\nduracion = None\npar = None\nfechaHora_iniOperacion = \"\"\nfechaHora_finOperacion = \"\"\noperacion = \"\"\ninit_balance = None\nfinal_balance = None\n# Configurar el nivel de logging, el nombre del archivo y el formato de los mensajes\nlogging.basicConfig(level=logging.DEBUG, filename='registro.log',",
+        "detail": "respaldo_main",
+        "documentation": {}
+    },
+    {
+        "label": "duracion",
+        "kind": 5,
+        "importPath": "respaldo_main",
+        "description": "respaldo_main",
+        "peekOfCode": "duracion = None\npar = None\nfechaHora_iniOperacion = \"\"\nfechaHora_finOperacion = \"\"\noperacion = \"\"\ninit_balance = None\nfinal_balance = None\n# Configurar el nivel de logging, el nombre del archivo y el formato de los mensajes\nlogging.basicConfig(level=logging.DEBUG, filename='registro.log',\n                    format='%(asctime)s - %(levelname)s\\n%(message)s\\n\\n')",
+        "detail": "respaldo_main",
+        "documentation": {}
+    },
+    {
+        "label": "par",
+        "kind": 5,
+        "importPath": "respaldo_main",
+        "description": "respaldo_main",
+        "peekOfCode": "par = None\nfechaHora_iniOperacion = \"\"\nfechaHora_finOperacion = \"\"\noperacion = \"\"\ninit_balance = None\nfinal_balance = None\n# Configurar el nivel de logging, el nombre del archivo y el formato de los mensajes\nlogging.basicConfig(level=logging.DEBUG, filename='registro.log',\n                    format='%(asctime)s - %(levelname)s\\n%(message)s\\n\\n')\n# Crear un logger",
+        "detail": "respaldo_main",
+        "documentation": {}
+    },
+    {
+        "label": "fechaHora_iniOperacion",
+        "kind": 5,
+        "importPath": "respaldo_main",
+        "description": "respaldo_main",
+        "peekOfCode": "fechaHora_iniOperacion = \"\"\nfechaHora_finOperacion = \"\"\noperacion = \"\"\ninit_balance = None\nfinal_balance = None\n# Configurar el nivel de logging, el nombre del archivo y el formato de los mensajes\nlogging.basicConfig(level=logging.DEBUG, filename='registro.log',\n                    format='%(asctime)s - %(levelname)s\\n%(message)s\\n\\n')\n# Crear un logger\nlogger = logging.getLogger()",
+        "detail": "respaldo_main",
+        "documentation": {}
+    },
+    {
+        "label": "fechaHora_finOperacion",
+        "kind": 5,
+        "importPath": "respaldo_main",
+        "description": "respaldo_main",
+        "peekOfCode": "fechaHora_finOperacion = \"\"\noperacion = \"\"\ninit_balance = None\nfinal_balance = None\n# Configurar el nivel de logging, el nombre del archivo y el formato de los mensajes\nlogging.basicConfig(level=logging.DEBUG, filename='registro.log',\n                    format='%(asctime)s - %(levelname)s\\n%(message)s\\n\\n')\n# Crear un logger\nlogger = logging.getLogger()\n# Establecer el idioma a español de España",
+        "detail": "respaldo_main",
+        "documentation": {}
+    },
+    {
+        "label": "operacion",
+        "kind": 5,
+        "importPath": "respaldo_main",
+        "description": "respaldo_main",
+        "peekOfCode": "operacion = \"\"\ninit_balance = None\nfinal_balance = None\n# Configurar el nivel de logging, el nombre del archivo y el formato de los mensajes\nlogging.basicConfig(level=logging.DEBUG, filename='registro.log',\n                    format='%(asctime)s - %(levelname)s\\n%(message)s\\n\\n')\n# Crear un logger\nlogger = logging.getLogger()\n# Establecer el idioma a español de España\nlocale.setlocale(locale.LC_ALL, 'es_ES.utf8')",
+        "detail": "respaldo_main",
+        "documentation": {}
+    },
+    {
+        "label": "init_balance",
+        "kind": 5,
+        "importPath": "respaldo_main",
+        "description": "respaldo_main",
+        "peekOfCode": "init_balance = None\nfinal_balance = None\n# Configurar el nivel de logging, el nombre del archivo y el formato de los mensajes\nlogging.basicConfig(level=logging.DEBUG, filename='registro.log',\n                    format='%(asctime)s - %(levelname)s\\n%(message)s\\n\\n')\n# Crear un logger\nlogger = logging.getLogger()\n# Establecer el idioma a español de España\nlocale.setlocale(locale.LC_ALL, 'es_ES.utf8')\nasync def refresh_page(page):",
+        "detail": "respaldo_main",
+        "documentation": {}
+    },
+    {
+        "label": "final_balance",
+        "kind": 5,
+        "importPath": "respaldo_main",
+        "description": "respaldo_main",
+        "peekOfCode": "final_balance = None\n# Configurar el nivel de logging, el nombre del archivo y el formato de los mensajes\nlogging.basicConfig(level=logging.DEBUG, filename='registro.log',\n                    format='%(asctime)s - %(levelname)s\\n%(message)s\\n\\n')\n# Crear un logger\nlogger = logging.getLogger()\n# Establecer el idioma a español de España\nlocale.setlocale(locale.LC_ALL, 'es_ES.utf8')\nasync def refresh_page(page):\n    try:",
+        "detail": "respaldo_main",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "respaldo_main",
+        "description": "respaldo_main",
+        "peekOfCode": "logger = logging.getLogger()\n# Establecer el idioma a español de España\nlocale.setlocale(locale.LC_ALL, 'es_ES.utf8')\nasync def refresh_page(page):\n    try:\n        while True:\n            error_flag = False\n            error = \"\"\n            # Verificar si la función montar_operacion no está en ejecución\n            if not operation_running:",
+        "detail": "respaldo_main",
+        "documentation": {}
+    },
+    {
+        "label": "telegram_api_id",
+        "kind": 5,
+        "importPath": "variables",
+        "description": "variables",
+        "peekOfCode": "telegram_api_id = 29201285\ntelegram_api_hash = \"ed4046eb5a49e961cfe6414594c86187\"\ntexto_clave = \"Zona horaria: UTC\"\n# quotex_email = \"mojochanquotex@gmail.com\"\nquotex_email = \"jose.guerra@globalfixcorp.com\"\n# quotex_email = \"ingmojo90.quotex@gmail.com\"\nquotex_email_password = \"4n1m4Tr0n\"\nquotex_email_remitent = \"noreply@qxbroker.com\"\nquotex_password = \"4n1m4Tr0n\"\ndireccion_excel = \"operaciones.xlsx\"",
+        "detail": "variables",
+        "documentation": {}
+    },
+    {
+        "label": "telegram_api_hash",
+        "kind": 5,
+        "importPath": "variables",
+        "description": "variables",
+        "peekOfCode": "telegram_api_hash = \"ed4046eb5a49e961cfe6414594c86187\"\ntexto_clave = \"Zona horaria: UTC\"\n# quotex_email = \"mojochanquotex@gmail.com\"\nquotex_email = \"jose.guerra@globalfixcorp.com\"\n# quotex_email = \"ingmojo90.quotex@gmail.com\"\nquotex_email_password = \"4n1m4Tr0n\"\nquotex_email_remitent = \"noreply@qxbroker.com\"\nquotex_password = \"4n1m4Tr0n\"\ndireccion_excel = \"operaciones.xlsx\"\nerror_time_margin_seconds = 15",
+        "detail": "variables",
+        "documentation": {}
+    },
+    {
+        "label": "texto_clave",
+        "kind": 5,
+        "importPath": "variables",
+        "description": "variables",
+        "peekOfCode": "texto_clave = \"Zona horaria: UTC\"\n# quotex_email = \"mojochanquotex@gmail.com\"\nquotex_email = \"jose.guerra@globalfixcorp.com\"\n# quotex_email = \"ingmojo90.quotex@gmail.com\"\nquotex_email_password = \"4n1m4Tr0n\"\nquotex_email_remitent = \"noreply@qxbroker.com\"\nquotex_password = \"4n1m4Tr0n\"\ndireccion_excel = \"operaciones.xlsx\"\nerror_time_margin_seconds = 15\nrefreshing_time_minutes = 1",
+        "detail": "variables",
+        "documentation": {}
+    },
+    {
+        "label": "quotex_email",
+        "kind": 5,
+        "importPath": "variables",
+        "description": "variables",
+        "peekOfCode": "quotex_email = \"jose.guerra@globalfixcorp.com\"\n# quotex_email = \"ingmojo90.quotex@gmail.com\"\nquotex_email_password = \"4n1m4Tr0n\"\nquotex_email_remitent = \"noreply@qxbroker.com\"\nquotex_password = \"4n1m4Tr0n\"\ndireccion_excel = \"operaciones.xlsx\"\nerror_time_margin_seconds = 15\nrefreshing_time_minutes = 1\nsleep_seconds_zero = 1\nsleep_seconds_first = 4",
+        "detail": "variables",
+        "documentation": {}
+    },
+    {
+        "label": "quotex_email_password",
+        "kind": 5,
+        "importPath": "variables",
+        "description": "variables",
+        "peekOfCode": "quotex_email_password = \"4n1m4Tr0n\"\nquotex_email_remitent = \"noreply@qxbroker.com\"\nquotex_password = \"4n1m4Tr0n\"\ndireccion_excel = \"operaciones.xlsx\"\nerror_time_margin_seconds = 15\nrefreshing_time_minutes = 1\nsleep_seconds_zero = 1\nsleep_seconds_first = 4\nsleep_seconds_second = 10\nsleep_seconds_third = 15",
+        "detail": "variables",
+        "documentation": {}
+    },
+    {
+        "label": "quotex_email_remitent",
+        "kind": 5,
+        "importPath": "variables",
+        "description": "variables",
+        "peekOfCode": "quotex_email_remitent = \"noreply@qxbroker.com\"\nquotex_password = \"4n1m4Tr0n\"\ndireccion_excel = \"operaciones.xlsx\"\nerror_time_margin_seconds = 15\nrefreshing_time_minutes = 1\nsleep_seconds_zero = 1\nsleep_seconds_first = 4\nsleep_seconds_second = 10\nsleep_seconds_third = 15\nsleep_1_minute = 60",
+        "detail": "variables",
+        "documentation": {}
+    },
+    {
+        "label": "quotex_password",
+        "kind": 5,
+        "importPath": "variables",
+        "description": "variables",
+        "peekOfCode": "quotex_password = \"4n1m4Tr0n\"\ndireccion_excel = \"operaciones.xlsx\"\nerror_time_margin_seconds = 15\nrefreshing_time_minutes = 1\nsleep_seconds_zero = 1\nsleep_seconds_first = 4\nsleep_seconds_second = 10\nsleep_seconds_third = 15\nsleep_1_minute = 60\nbroker_url = \"https://qxbroker.com/es/trade\"",
+        "detail": "variables",
+        "documentation": {}
+    },
+    {
+        "label": "direccion_excel",
+        "kind": 5,
+        "importPath": "variables",
+        "description": "variables",
+        "peekOfCode": "direccion_excel = \"operaciones.xlsx\"\nerror_time_margin_seconds = 15\nrefreshing_time_minutes = 1\nsleep_seconds_zero = 1\nsleep_seconds_first = 4\nsleep_seconds_second = 10\nsleep_seconds_third = 15\nsleep_1_minute = 60\nbroker_url = \"https://qxbroker.com/es/trade\"\nbroker_url_login = \"https://qxbroker.com/es/sign-in/\"",
+        "detail": "variables",
+        "documentation": {}
+    },
+    {
+        "label": "error_time_margin_seconds",
+        "kind": 5,
+        "importPath": "variables",
+        "description": "variables",
+        "peekOfCode": "error_time_margin_seconds = 15\nrefreshing_time_minutes = 1\nsleep_seconds_zero = 1\nsleep_seconds_first = 4\nsleep_seconds_second = 10\nsleep_seconds_third = 15\nsleep_1_minute = 60\nbroker_url = \"https://qxbroker.com/es/trade\"\nbroker_url_login = \"https://qxbroker.com/es/sign-in/\"\nbroker_url_demo = \"https://qxbroker.com/es/demo-trade\"",
+        "detail": "variables",
+        "documentation": {}
+    },
+    {
+        "label": "refreshing_time_minutes",
+        "kind": 5,
+        "importPath": "variables",
+        "description": "variables",
+        "peekOfCode": "refreshing_time_minutes = 1\nsleep_seconds_zero = 1\nsleep_seconds_first = 4\nsleep_seconds_second = 10\nsleep_seconds_third = 15\nsleep_1_minute = 60\nbroker_url = \"https://qxbroker.com/es/trade\"\nbroker_url_login = \"https://qxbroker.com/es/sign-in/\"\nbroker_url_demo = \"https://qxbroker.com/es/demo-trade\"\nbroker_amount = 10",
+        "detail": "variables",
+        "documentation": {}
+    },
+    {
+        "label": "sleep_seconds_zero",
+        "kind": 5,
+        "importPath": "variables",
+        "description": "variables",
+        "peekOfCode": "sleep_seconds_zero = 1\nsleep_seconds_first = 4\nsleep_seconds_second = 10\nsleep_seconds_third = 15\nsleep_1_minute = 60\nbroker_url = \"https://qxbroker.com/es/trade\"\nbroker_url_login = \"https://qxbroker.com/es/sign-in/\"\nbroker_url_demo = \"https://qxbroker.com/es/demo-trade\"\nbroker_amount = 10\nbroker_percent = True",
+        "detail": "variables",
+        "documentation": {}
+    },
+    {
+        "label": "sleep_seconds_first",
+        "kind": 5,
+        "importPath": "variables",
+        "description": "variables",
+        "peekOfCode": "sleep_seconds_first = 4\nsleep_seconds_second = 10\nsleep_seconds_third = 15\nsleep_1_minute = 60\nbroker_url = \"https://qxbroker.com/es/trade\"\nbroker_url_login = \"https://qxbroker.com/es/sign-in/\"\nbroker_url_demo = \"https://qxbroker.com/es/demo-trade\"\nbroker_amount = 10\nbroker_percent = True\ntelegram_group_username = \"@magictradersignals\"",
+        "detail": "variables",
+        "documentation": {}
+    },
+    {
+        "label": "sleep_seconds_second",
+        "kind": 5,
+        "importPath": "variables",
+        "description": "variables",
+        "peekOfCode": "sleep_seconds_second = 10\nsleep_seconds_third = 15\nsleep_1_minute = 60\nbroker_url = \"https://qxbroker.com/es/trade\"\nbroker_url_login = \"https://qxbroker.com/es/sign-in/\"\nbroker_url_demo = \"https://qxbroker.com/es/demo-trade\"\nbroker_amount = 10\nbroker_percent = True\ntelegram_group_username = \"@magictradersignals\"\n# telegram_group_username = \"me\"",
+        "detail": "variables",
+        "documentation": {}
+    },
+    {
+        "label": "sleep_seconds_third",
+        "kind": 5,
+        "importPath": "variables",
+        "description": "variables",
+        "peekOfCode": "sleep_seconds_third = 15\nsleep_1_minute = 60\nbroker_url = \"https://qxbroker.com/es/trade\"\nbroker_url_login = \"https://qxbroker.com/es/sign-in/\"\nbroker_url_demo = \"https://qxbroker.com/es/demo-trade\"\nbroker_amount = 10\nbroker_percent = True\ntelegram_group_username = \"@magictradersignals\"\n# telegram_group_username = \"me\"\nformato_fecha = \"%d de %B de %Y a las %H:%M con %S segundos\"",
+        "detail": "variables",
+        "documentation": {}
+    },
+    {
+        "label": "sleep_1_minute",
+        "kind": 5,
+        "importPath": "variables",
+        "description": "variables",
+        "peekOfCode": "sleep_1_minute = 60\nbroker_url = \"https://qxbroker.com/es/trade\"\nbroker_url_login = \"https://qxbroker.com/es/sign-in/\"\nbroker_url_demo = \"https://qxbroker.com/es/demo-trade\"\nbroker_amount = 10\nbroker_percent = True\ntelegram_group_username = \"@magictradersignals\"\n# telegram_group_username = \"me\"\nformato_fecha = \"%d de %B de %Y a las %H:%M con %S segundos\"",
+        "detail": "variables",
+        "documentation": {}
+    },
+    {
+        "label": "broker_url",
+        "kind": 5,
+        "importPath": "variables",
+        "description": "variables",
+        "peekOfCode": "broker_url = \"https://qxbroker.com/es/trade\"\nbroker_url_login = \"https://qxbroker.com/es/sign-in/\"\nbroker_url_demo = \"https://qxbroker.com/es/demo-trade\"\nbroker_amount = 10\nbroker_percent = True\ntelegram_group_username = \"@magictradersignals\"\n# telegram_group_username = \"me\"\nformato_fecha = \"%d de %B de %Y a las %H:%M con %S segundos\"",
+        "detail": "variables",
+        "documentation": {}
+    },
+    {
+        "label": "broker_url_login",
+        "kind": 5,
+        "importPath": "variables",
+        "description": "variables",
+        "peekOfCode": "broker_url_login = \"https://qxbroker.com/es/sign-in/\"\nbroker_url_demo = \"https://qxbroker.com/es/demo-trade\"\nbroker_amount = 10\nbroker_percent = True\ntelegram_group_username = \"@magictradersignals\"\n# telegram_group_username = \"me\"\nformato_fecha = \"%d de %B de %Y a las %H:%M con %S segundos\"",
+        "detail": "variables",
+        "documentation": {}
+    },
+    {
+        "label": "broker_url_demo",
+        "kind": 5,
+        "importPath": "variables",
+        "description": "variables",
+        "peekOfCode": "broker_url_demo = \"https://qxbroker.com/es/demo-trade\"\nbroker_amount = 10\nbroker_percent = True\ntelegram_group_username = \"@magictradersignals\"\n# telegram_group_username = \"me\"\nformato_fecha = \"%d de %B de %Y a las %H:%M con %S segundos\"",
+        "detail": "variables",
+        "documentation": {}
+    },
+    {
+        "label": "broker_amount",
+        "kind": 5,
+        "importPath": "variables",
+        "description": "variables",
+        "peekOfCode": "broker_amount = 10\nbroker_percent = True\ntelegram_group_username = \"@magictradersignals\"\n# telegram_group_username = \"me\"\nformato_fecha = \"%d de %B de %Y a las %H:%M con %S segundos\"",
+        "detail": "variables",
+        "documentation": {}
+    },
+    {
+        "label": "broker_percent",
+        "kind": 5,
+        "importPath": "variables",
+        "description": "variables",
+        "peekOfCode": "broker_percent = True\ntelegram_group_username = \"@magictradersignals\"\n# telegram_group_username = \"me\"\nformato_fecha = \"%d de %B de %Y a las %H:%M con %S segundos\"",
+        "detail": "variables",
+        "documentation": {}
+    },
+    {
+        "label": "telegram_group_username",
+        "kind": 5,
+        "importPath": "variables",
+        "description": "variables",
+        "peekOfCode": "telegram_group_username = \"@magictradersignals\"\n# telegram_group_username = \"me\"\nformato_fecha = \"%d de %B de %Y a las %H:%M con %S segundos\"",
+        "detail": "variables",
+        "documentation": {}
+    },
+    {
+        "label": "formato_fecha",
+        "kind": 5,
+        "importPath": "variables",
+        "description": "variables",
+        "peekOfCode": "formato_fecha = \"%d de %B de %Y a las %H:%M con %S segundos\"",
+        "detail": "variables",
+        "documentation": {}
+    }
+]
